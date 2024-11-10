@@ -69,7 +69,7 @@ fn main() {
                             if let Some(varianten) = &spell.varianten {
                                 print_list("Varianten", varianten);
                             } else {
-                                print_field("Varianten", "None");
+                                print_field("Varianten", "Keine bekannt");
                             }
                         },
                         _ => println!("Field '{}' not recognized.", field_name),

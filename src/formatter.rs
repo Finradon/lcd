@@ -3,13 +3,13 @@ use crate::data_loader::Spell;
 
 /// Prints the spell name in yellow without a label.
 pub fn print_spell_name(name: &str) {
-    println!("{}", name.bold().yellow());  // Print the spell name in bold yellow
+    println!("\n{}\n", name.bold().yellow().underline());  // Print the spell name in bold yellow
 }
 
 /// Formats and prints the specified field with bold and colored labels, indented by four spaces.
 /// If the value is long, it wraps the text to a specified width.
 pub fn print_field(label: &str, value: &str) {
-    let formatted_label = label.bold().blue();  // Label in bold blue text
+    let formatted_label = label.bold().blue().italic();  // Label in bold blue text
     println!("{}: {}", formatted_label, wrap_text(value, 80));  // Indented with four spaces
 }
 
