@@ -41,7 +41,7 @@ fn main() {
     };
 
     // Search for the best matching spell name
-    let tolerance = 2; // Adjust as needed for fuzzy search
+    let tolerance = 4; // Adjust as needed for fuzzy search
     if let Some(best_match) = fuzzy_search_best_match(&spells, query, tolerance) {
         if let Some(spell) = spells.get(best_match) {
             // Handle displaying all data or specific fields
