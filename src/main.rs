@@ -86,7 +86,7 @@ fn main() {
                 }
 
                 // Check if --field or -f was used and print the corresponding fields
-                if let Some(field_list) = fields {
+                if let Some(field_list) = &fields {
                     for field_name in field_list {
                         match field_name.to_lowercase().as_str() {
                             "probe" => print_field("Probe", &spell.probe),
@@ -119,7 +119,7 @@ fn main() {
                 }
 
                 // Print default output if no specific field flags or --field options were provided
-                if !printed_any_field {
+                if !printed_any_field && fields.is_none() {
                     print_field("Probe", &spell.probe);
                     print_field("Technik", &spell.technik);
                     print_field("Zauberdauer", &spell.zauberdauer);
