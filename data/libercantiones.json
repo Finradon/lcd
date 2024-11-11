@@ -371,7 +371,9 @@
         "Merkmale": "Illusion",
         "Komplexität": "A",
         "Hintergrund": "Dieser von der großartigen Methelessa ya Comari entwickelte Spruch wird nur an der Akademie des Seienden Scheins und an der Universalschule von Al'Anfa gelehrt. Unter den Scharlatanen hat er jedoch weit größere Verbreitung gefunden: so sehr, dass er mittlerweile als typische Scharlatanerie gilt und manch verknöcherter Gildenmagier diese 'Spielerei' als unwürdig erachtet.",
+        "Modifikationen": "Zauberdauer, Kosten, Reichweite, Wirkungsdauer",
         "Varianten": [
+            "Farbenglanz (+3). Anstatt einer goldschimmernden Oberfläche können nach Belieben auch silbern, kristallen oder opalgleich sowie jede denkbare Farbe gewählt werden.",
             "Muster (+7). Die Oberfläche besteht aus einem vom Zaubernden festgelegten, 'gekachelten' Muster aus mehreren Farben. Das Muster ist von beliebiger Komplexität und kann z.B. auch Schriftzeichen (ständig wiederholte Wörter) zeigen.",
             "Wasserfläche (+7). Das Objekt muss keine feste Oberfläche haben, sondern kann z.B. menschliche Haut oder eine bewegte Wasserfläche sein."
         ],
