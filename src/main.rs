@@ -1,9 +1,9 @@
 use std::path::Path;
 mod args;
 mod data_loader;
+mod display;
 mod formatter;
 mod search;
-mod display;
 
 use args::parse_args;
 use display::print_spell;
@@ -27,7 +27,9 @@ fn main() {
     } else if Path::new(fallback_path).exists() {
         fallback_path
     } else {
-        eprintln!("Error: libercantiones.json not found in either ./data/ or /usr/share/lcd/");
+        eprintln!(
+            "Error: libercantiones.json not found in either ./data/ or /usr/local/share/lcd/"
+        );
         return;
     };
 

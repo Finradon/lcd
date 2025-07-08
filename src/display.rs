@@ -1,9 +1,14 @@
-use crate::formatter::{print_field, print_list, print_spell_name};
 use crate::data_loader::Spell;
+use crate::formatter::{print_field, print_list, print_spell_name};
 use clap::ArgMatches;
 
 /// Prints the spell fields based on the command-line flags or default fields if none are specified.
-pub fn print_spell(spell: &Spell, matches: &ArgMatches, fields: Option<&Vec<&String>>, best_match: &str) {
+pub fn print_spell(
+    spell: &Spell,
+    matches: &ArgMatches,
+    fields: Option<&Vec<&String>>,
+    best_match: &str,
+) {
     print_spell_name(best_match);
 
     // Check each specific field flag and print the corresponding field if present

@@ -1,11 +1,11 @@
 use serde::Deserialize;
+use std::collections::HashMap;
 use std::fs::File;
 use std::io::BufReader;
-use std::collections::HashMap;
 
 #[derive(Debug, Deserialize)]
-#[serde(rename_all = "PascalCase")]  // Applies PascalCase conversion to all fields
-// #[allow(dead_code)]
+#[serde(rename_all = "PascalCase")] // Applies PascalCase conversion to all fields
+                                    // #[allow(dead_code)]
 pub struct Spell {
     pub probe: String,
     pub technik: String,
@@ -26,7 +26,9 @@ pub struct Spell {
 }
 
 // Function to load and parse the JSON file
-pub fn load_spells_from_file(path: &str) -> Result<HashMap<String, Spell>, Box<dyn std::error::Error>> {
+pub fn load_spells_from_file(
+    path: &str,
+) -> Result<HashMap<String, Spell>, Box<dyn std::error::Error>> {
     let file = File::open(path)?;
     let reader = BufReader::new(file);
     let spells: HashMap<String, Spell> = serde_json::from_reader(reader)?;

@@ -11,13 +11,55 @@ pub fn parse_args() -> ArgMatches {
                 .index(1),
         )
         // Add a flag for each field in the Spell struct with short options for specific fields
-        .arg(Arg::new("probe").short('p').long("probe").help("Show the Probe field").action(clap::ArgAction::SetTrue))
-        .arg(Arg::new("wirkung").short('w').long("wirkung").help("Show the Wirkung field").action(clap::ArgAction::SetTrue))
-        .arg(Arg::new("kosten").short('k').long("kosten").help("Show the Kosten field").action(clap::ArgAction::SetTrue))
-        .arg(Arg::new("reichweite").short('r').long("reichweite").help("Show the Reichweite field").action(clap::ArgAction::SetTrue))
-        .arg(Arg::new("zauberdauer").short('z').long("zauberdauer").help("Show the Zauberdauer field").action(clap::ArgAction::SetTrue))
-        .arg(Arg::new("modifikationen").short('m').long("modifikationen").help("Show the Modifikationen field").action(clap::ArgAction::SetTrue))
-        .arg(Arg::new("varianten").short('v').long("varianten").help("Show the Varianten field").action(clap::ArgAction::SetTrue))
+        .arg(
+            Arg::new("probe")
+                .short('p')
+                .long("probe")
+                .help("Show the Probe field")
+                .action(clap::ArgAction::SetTrue),
+        )
+        .arg(
+            Arg::new("wirkung")
+                .short('w')
+                .long("wirkung")
+                .help("Show the Wirkung field")
+                .action(clap::ArgAction::SetTrue),
+        )
+        .arg(
+            Arg::new("kosten")
+                .short('k')
+                .long("kosten")
+                .help("Show the Kosten field")
+                .action(clap::ArgAction::SetTrue),
+        )
+        .arg(
+            Arg::new("reichweite")
+                .short('r')
+                .long("reichweite")
+                .help("Show the Reichweite field")
+                .action(clap::ArgAction::SetTrue),
+        )
+        .arg(
+            Arg::new("zauberdauer")
+                .short('z')
+                .long("zauberdauer")
+                .help("Show the Zauberdauer field")
+                .action(clap::ArgAction::SetTrue),
+        )
+        .arg(
+            Arg::new("modifikationen")
+                .short('m')
+                .long("modifikationen")
+                .help("Show the Modifikationen field")
+                .action(clap::ArgAction::SetTrue),
+        )
+        .arg(
+            Arg::new("varianten")
+                .short('v')
+                .long("varianten")
+                .help("Show the Varianten field")
+                .action(clap::ArgAction::SetTrue),
+        )
         .arg(
             Arg::new("field")
                 .short('f')

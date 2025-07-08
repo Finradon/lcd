@@ -7,7 +7,7 @@ use strsim::levenshtein;
 pub fn fuzzy_search_best_match<'a>(
     spells: &'a HashMap<String, Spell>,
     query: &str,
-    tolerance: usize
+    tolerance: usize,
 ) -> Option<&'a String> {
     let query = query.to_lowercase();
     let mut best_match: Option<&String> = None;
